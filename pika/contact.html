@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pika Creative Agency Portfolio Template">
+    <meta name="keywords" content="pika, creative, agency, portfolio, template, bootstrap" />
+    <meta name="author" content="Diamant Gjota">
+    <link rel="shortcut icon" href="img/favicon.JPG">
+
+    
+    <title>Rowena Jaico | Full Stack Web Developer | Greater NYC Area</title>
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/cubeportfolio.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    <!-- google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,300,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/active_square.png">
+
+</head>
+
+<body>
+    
+    <div id="preloader"></div>
+    
+       <!-- start:navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-default">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+              <a class="navbar-brand" href="#">R O W E N A | J A I C O<!--rowena logo--></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+    <!-- end:navbar -->
+    
+    <ul class="subnav hidden-md hidden-sm hidden-xs">
+      <li><a href="#" data-scroll="info">Info</a></li>
+      <li><a href="#" data-scroll="map">Map</a></li>
+    </ul>
+    
+    <!-- start:container -->
+    <div class="container">
+        
+        <!-- start:info -->
+        <div data-anchor="info" class="content">
+            <div class="section-title">
+                <h1>Info</h1>
+            </div>
+            <div class="row">
+                <div class="contact">
+                    <div class="col-sm-6 col-md-4">
+                        <h4><i class="fa fa-map-marker"></i> Location</h4>
+                        <p>198 West 21th Street, <br> New York, NY 10010</p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <h4><i class="fa fa-phone"></i> Phone</h4>
+                        <p>+00 (123) 456 78 90 <br> +11 (123) 456 78 90</p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <h4><i class="fa fa-envelope"></i> E-Mail</h4>
+                        <p>email@domain.com <br> email2@domain.com</p>
+                    </div>
+                </div>
+            </div><!-- end row -->
+        </div>
+        <!-- end:info -->
+        
+        <!-- start:map -->
+        <div data-anchor="map" class="content">
+            <div class="section-title">
+                <h1>Our Location</h1>
+            </div>
+            <div id="map"></div>
+        </div>
+        <!-- end:map -->
+        
+        
+    </div>    
+    <!-- end:container -->
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">&COPY; Copyright 2015, designed by <a href="#">Diamond Creative</a></p>
+                <ul class="social-icons pull-right">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- javascript links -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/morphext.js"></script>
+    <script type="text/javascript" src="js/jquery.cubeportfolio.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/gmaps.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <script type="text/javascript">
+        //map
+        var map;
+        $(document).ready(function(){
+          map = new GMaps({
+                el: '#map',
+                lat: -12.043333,
+                lng: -77.028333
+          });
+          map.addMarker({
+                lat: -12.042,
+                lng: -77.028333,
+                title: 'Marker with InfoWindow',
+                infoWindow: {
+                  content: '<p>77 Mass. Ave., E14/E15 Seattle, MA 02139-4307 USA</p>'
+                }
+          });
+        });
+    </script>
+    
+</body>
+</html>
