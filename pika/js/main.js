@@ -18,7 +18,7 @@ $(document).ready(function(){
    // slider text effect
     $("#slider").Morphext({
         animation: 'fadeIn',
-        speed: 3500
+        speed: 2100
     });
    
    // half object
